@@ -8,41 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Palladian - soft warm background */
-    --background: 44 31% 90%;
-    --foreground: 300 5% 27%;
+    /* Clean light background */
+    --background: 0 0% 98%;
+    --foreground: 220 10% 25%;
 
-    /* Card with slight elevation */
+    /* Card with clean white */
     --card: 0 0% 100%;
-    --card-foreground: 300 5% 27%;
+    --card-foreground: 220 10% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 300 5% 27%;
+    --popover-foreground: 220 10% 25%;
 
-    /* Kyoto Dusk - primary actions */
-    --primary: 231 22% 45%;
+    /* Soft teal/green - Primary for Parent mode */
+    --primary: 158 38% 65%;
     --primary-foreground: 0 0% 100%;
 
-    /* Matcha Cream - calm sections */
-    --secondary: 134 18% 66%;
-    --secondary-foreground: 300 5% 27%;
+    /* Warm yellow - Secondary for Child mode */
+    --secondary: 42 88% 65%;
+    --secondary-foreground: 220 10% 25%;
 
-    /* Oatmeal - neutral containers */
-    --muted: 40 17% 74%;
-    --muted-foreground: 300 5% 40%;
+    /* Light neutral for cards */
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 10% 40%;
 
-    /* Roasted Terracotta - highlights and CTAs */
-    --accent: 11 68% 68%;
-    --accent-foreground: 0 0% 100%;
+    /* Soft coral/pink accent */
+    --accent: 350 70% 85%;
+    --accent-foreground: 220 10% 25%;
+
+    /* Medicine/Health yellow */
+    --health: 45 95% 80%;
+    --health-foreground: 220 10% 25%;
+
+    /* Exercise blue */
+    --exercise: 210 60% 85%;
+    --exercise-foreground: 220 10% 25%;
+
+    /* Learn purple */
+    --learn: 250 50% 85%;
+    --learn-foreground: 220 10% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 20% 85%;
-    --input: 40 20% 85%;
-    --ring: 231 22% 45%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 158 38% 65%;
 
-    --radius: 1rem;
+    --radius: 1.25rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -62,33 +74,42 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 300 5% 15%;
-    --foreground: 44 31% 90%;
+    --background: 220 15% 12%;
+    --foreground: 0 0% 95%;
 
-    --card: 300 5% 20%;
-    --card-foreground: 44 31% 90%;
+    --card: 220 15% 16%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 300 5% 20%;
-    --popover-foreground: 44 31% 90%;
+    --popover: 220 15% 16%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 231 22% 55%;
+    --primary: 158 38% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 134 18% 50%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 42 88% 55%;
+    --secondary-foreground: 220 15% 12%;
 
-    --muted: 40 17% 30%;
-    --muted-foreground: 40 17% 74%;
+    --muted: 220 15% 25%;
+    --muted-foreground: 220 10% 70%;
 
-    --accent: 11 68% 68%;
+    --accent: 350 60% 70%;
     --accent-foreground: 0 0% 100%;
+
+    --health: 45 85% 60%;
+    --health-foreground: 220 15% 12%;
+
+    --exercise: 210 60% 70%;
+    --exercise-foreground: 220 15% 12%;
+
+    --learn: 250 50% 70%;
+    --learn-foreground: 220 15% 12%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 300 5% 30%;
-    --input: 300 5% 30%;
-    --ring: 231 22% 55%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 158 38% 55%;
   }
 }
 

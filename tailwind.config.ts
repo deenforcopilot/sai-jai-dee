@@ -42,6 +42,18 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        health: {
+          DEFAULT: "hsl(var(--health))",
+          foreground: "hsl(var(--health-foreground))",
+        },
+        exercise: {
+          DEFAULT: "hsl(var(--exercise))",
+          foreground: "hsl(var(--exercise-foreground))",
+        },
+        learn: {
+          DEFAULT: "hsl(var(--learn))",
+          foreground: "hsl(var(--learn-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
