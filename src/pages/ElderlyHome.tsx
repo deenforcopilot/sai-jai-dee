@@ -59,38 +59,6 @@ const ElderlyHome = () => {
       </div>
 
       <div className="p-6 space-y-8">
-        {/* Activities Section */}
-        <section>
-          <h2 className="text-3xl font-bold mb-4 text-foreground">
-            กิจกรรมวันนี้
-          </h2>
-          <div className="space-y-4">
-            {mockActivities.map((activity) => (
-              <Card
-                key={activity.id}
-                className="overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300 border-2"
-                onClick={() => navigate(`/elderly/activity/${activity.id}`)}
-              >
-                <div className="flex gap-4 p-4">
-                  <img
-                    src={activity.image}
-                    alt={activity.title}
-                    className="w-32 h-32 object-cover rounded-xl flex-shrink-0"
-                  />
-                  <div className="flex-1 flex flex-col justify-center">
-                    <h3 className="text-2xl font-semibold mb-2">
-                      {activity.title}
-                    </h3>
-                    <p className="text-lg text-muted-foreground">
-                      {activity.description}
-                    </p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </section>
-
         {/* Doctor Appointments */}
         <section>
           <div className="flex items-center gap-3 mb-4">
@@ -113,6 +81,39 @@ const ElderlyHome = () => {
               </Card>
             ))}
           </div>
+        </section>
+
+        {/* Activities Section - Single Featured Activity */}
+        <section>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">
+            กิจกรรมที่กำลังจะมา
+          </h2>
+          <Card
+            className="overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300 border-2"
+            onClick={() => navigate(`/elderly/activity/${mockActivities[0].id}`)}
+          >
+            <img
+              src={mockActivities[0].image}
+              alt={mockActivities[0].title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-5">
+              <div className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                Workshop
+              </div>
+              <h3 className="text-2xl font-semibold mb-2">
+                {mockActivities[0].title}
+              </h3>
+              <p className="text-lg text-muted-foreground mb-4">
+                {mockActivities[0].description}
+              </p>
+              <div className="bg-accent/20 border border-accent rounded-lg p-4 text-center">
+                <p className="text-xl font-semibold text-accent-foreground">
+                  🗳️ คลิกเพื่อดูรายละเอียดและโหวตกิจกรรมเดือนหน้า
+                </p>
+              </div>
+            </div>
+          </Card>
         </section>
 
         {/* Medications */}
